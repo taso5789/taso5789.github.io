@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Taihei Sone</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <!-- Anti-FOUC: apply saved language class before first paint -->
+  <script>
+    (function(){if(localStorage.getItem('preferred-lang')==='ja')document.documentElement.classList.add('lang-ja');})();
+  </script>
+</head>
+<body>
+  <!-- Language Toggle -->
+  <div id="lang-bar">
+    <button id="btn-en" class="lang-btn active" onclick="setLang('en')">EN</button>
+    <span class="lang-sep">|</span>
+    <button id="btn-ja" class="lang-btn" onclick="setLang('ja')">日本語</button>
+  </div>
+
+  <div class="container">
+
+    <!-- Header -->
+    <header>
+      <h1 class="name">Taihei Sone <span class="name-ja">曽根 太平</span></h1>
+      <p class="subtitle" data-en="Data Scientist · Economist · Graduate Researcher" data-ja="データサイエンティスト・エコノミスト・大学院研究員"></p>
+      <div class="contact-row">
+        <a href="mailto:taihei.sone.study.abroad@gmail.com">taihei.sone.study.abroad@gmail.com</a>
+        <span class="sep">·</span>
+        <a href="https://github.com/taso5789" target="_blank" rel="noopener noreferrer">github.com/taso5789</a>
+        <span class="sep">·</span>
+        <a href="https://www.linkedin.com/in/taihei-sone-586102253" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <span class="sep">·</span>
+        <span>+1-720-313-2081</span>
+      </div>
+    </header>
+
+    <hr class="divider" />
+
+    <!-- About -->
+    <section id="about">
+      <h2 data-en="About" data-ja="自己紹介"></h2>
+      <p data-en="I am a Data Scientist and Economist at the Bank of Japan, currently on study leave pursuing an M.S. in Data Science at the University of Colorado Boulder. My work spans financial data analytics, agent-based simulation, and NLP with large language models. I am passionate about bridging rigorous quantitative methods with real-world economic and policy questions."
+         data-ja="日本銀行のデータサイエンティスト・エコノミストとして、現在は留学制度を利用してコロラド大学ボルダー校でデータサイエンスの修士課程に在籍しています。金融データ分析、エージェントベースシミュレーション、大規模言語モデルを用いたNLPを専門とし、厳密な定量的手法と現実の経済・政策問題の橋渡しを目指しています。"></p>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- Research Interests -->
+    <section id="interests">
+      <h2 data-en="Research Interests" data-ja="研究関心"></h2>
+      <ul class="tag-list">
+        <li data-en="Multi-Agent Simulation with AI Agents" data-ja="AIエージェントによるマルチエージェントシミュレーション"></li>
+        <li data-en="Interpretable &amp; Human-Centered AI" data-ja="解釈可能・人間中心AI"></li>
+        <li data-en="Scalable Data Architectures" data-ja="スケーラブルなデータアーキテクチャ"></li>
+        <li data-en="Artificial General / Superintelligence" data-ja="汎用人工知能・超知能"></li>
+        <li data-en="LLM-based NLP" data-ja="LLMを用いた自然言語処理"></li>
+        <li data-en="ML for Economic &amp; Financial Time-Series" data-ja="経済・金融時系列への機械学習応用"></li>
+      </ul>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- Education -->
+    <section id="education">
+      <h2 data-en="Education" data-ja="学歴"></h2>
+
+      <div class="entry">
+        <div class="entry-meta">
+          <span class="entry-year">2024–2026</span>
+          <span class="entry-tag" data-en="expected" data-ja="見込み">(expected)</span>
+        </div>
+        <div class="entry-body">
+          <p class="entry-title" data-en="M.S. in Data Science, University of Colorado Boulder" data-ja="データサイエンス修士（理学）、コロラド大学ボルダー校"></p>
+          <p class="entry-sub">Boulder, CO, USA</p>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-meta"><span class="entry-year">2017–2019</span></div>
+        <div class="entry-body">
+          <p class="entry-title" data-en="M.Eng. in Engineering, University of Tokyo" data-ja="工学修士、東京大学"></p>
+          <p class="entry-sub" data-en="GPA: 4.0/4.0 · Thesis: Simulation analysis of bank network stabilization by liquidity risk management" data-ja="GPA: 4.0/4.0 · 論文：流動性リスク管理による銀行ネットワーク安定化のシミュレーション分析"></p>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-meta"><span class="entry-year">2012–2017</span></div>
+        <div class="entry-body">
+          <p class="entry-title" data-en="B.Eng. in Engineering, University of Tokyo" data-ja="工学士、東京大学"></p>
+          <p class="entry-sub" data-en="Thesis: An analysis of policies for the stabilization of interbank network using agent-based simulation" data-ja="論文：エージェントベースシミュレーションを用いたインターバンクネットワーク安定化政策の分析"></p>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- Publications -->
+    <section id="publications">
+      <h2 data-en="Publications &amp; Presentations" data-ja="論文・発表"></h2>
+
+      <div class="pub-group">
+        <h3 data-en="Conference Paper" data-ja="査読付き会議論文"></h3>
+
+        <div class="pub-entry">
+          <p class="pub-citation">
+            <span class="lang-en">Sone, T. (2025). <em>Wage sentiment indices derived from survey comments via large language models.</em>
+            Accepted for publication in the Proceedings of the 2025 IEEE International Conference on Big Data (IEEE BigData 2025).
+            arXiv:2509.00290 [cs.CL].</span>
+            <span class="lang-ja">Sone, T. (2025). <em>Wage sentiment indices derived from survey comments via large language models.</em>
+            IEEE BigData 2025 proceedings に採択済み。arXiv:2509.00290 [cs.CL].</span>
+          </p>
+          <ul class="pub-venues">
+            <li>IEEE BigData 2025, Macau, China — December 8–11, 2025</li>
+          </ul>
+        </div>
+
+        <div class="pub-entry">
+          <p class="pub-citation">
+            <span class="lang-en">Sone, T., Izumi, K., Sakaji, H., Matsushima, H., and Shimada, T. (2019). <em>Simulation analysis of bank network stabilization by liquidity risk management.</em>
+            22nd Meeting of the Special Interest Group on Financial Informatics (SIG-FIN), JSAI, Tokyo, Japan.</span>
+            <span class="lang-ja">Sone, T., 泉 K., 榊 H., 松嶋 H., 島田 T. (2019). <em>Simulation analysis of bank network stabilization by liquidity risk management.</em>
+            人工知能学会 第22回金融情報学研究会（SIG-FIN）、東京。</span>
+          </p>
+        </div>
+
+        <div class="pub-entry">
+          <p class="pub-citation">
+            <span class="lang-en">Yonenoh, H., Sone, T., and Izumi, K. (2017). <em>An analysis of policies for the stabilization of interbank network using agent-based simulation.</em>
+            31st Annual Conference of the Japanese Society for Artificial Intelligence (JSAI), Aichi, Japan.</span>
+            <span class="lang-ja">米納 H., Sone, T., 泉 K. (2017). <em>An analysis of policies for the stabilization of interbank network using agent-based simulation.</em>
+            第31回人工知能学会全国大会、愛知。</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="pub-group">
+        <h3 data-en="Working Papers" data-ja="ワーキングペーパー"></h3>
+
+        <div class="pub-entry">
+          <p class="pub-citation">
+            <span class="lang-en">Maehashi, K., Miyakawa, D., Sasaki, T., and Sone, T. (2025). <em>Skewed interest rate expectations and effects of central banks' market operations: empirical findings using granular transaction data.</em>
+            Bank of Japan Working Paper Series No. 25-E-7.
+            Under review at the <em>Review of Monetary and Financial Studies.</em></span>
+            <span class="lang-ja">前橋 K., 宮川 D., 佐々木 T., Sone, T. (2025). <em>Skewed interest rate expectations and effects of central banks' market operations: empirical findings using granular transaction data.</em>
+            日本銀行ワーキングペーパーシリーズ No. 25-E-7。<em>Review of Monetary and Financial Studies</em> に審査中。</span>
+          </p>
+          <ul class="pub-venues">
+            <li>CFE–CMStatistics 2025, London, UK — December 13–15, 2025</li>
+            <li>JSME 2025 Autumn Meeting, Nagasaki, Japan — November 15–16, 2025</li>
+            <li>JAFEE/SOFINE/ISM Symposium, Tokyo, Japan — September 20–21, 2025</li>
+          </ul>
+        </div>
+
+        <div class="pub-entry">
+          <p class="pub-citation">
+            <span class="lang-en">Miyakawa, D., Oda, T., and Sone, T. (2023). <em>Regulatory reforms and price heterogeneity in an OTC derivative market.</em>
+            Bank of Japan Working Paper Series No. 23-E-12.</span>
+            <span class="lang-ja">宮川 D., 織田 T., Sone, T. (2023). <em>Regulatory reforms and price heterogeneity in an OTC derivative market.</em>
+            日本銀行ワーキングペーパーシリーズ No. 23-E-12。</span>
+          </p>
+          <ul class="pub-venues">
+            <li>Finance Workshop, IMES, Bank of Japan — November 2023</li>
+            <li>SKKU–KAFE International Conference on Finance, Seoul, Korea — October 2023</li>
+            <li>JAFEE 59th Summer Conference, Tokyo — August 2023</li>
+            <li>First Waseda Summer Workshop in Finance — July 2023</li>
+            <li>4th Fall Conference of the Nippon Finance Association — November 2022</li>
+            <li>Finance Seminar, Waseda University — October 2022</li>
+            <li>Faculty Seminar, Hitotsubashi University — August 2022</li>
+            <li>7th Finance Workshop, HCFR, Hitotsubashi University — July 2022</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- Experience -->
+    <section id="experience">
+      <h2 data-en="Experience" data-ja="職歴・研究歴"></h2>
+
+      <div class="entry">
+        <div class="entry-meta"><span class="entry-year">2025–present</span></div>
+        <div class="entry-body">
+          <p class="entry-title" data-en="Graduate Researcher, University of Colorado Boulder" data-ja="大学院研究員、コロラド大学ボルダー校"></p>
+          <p class="entry-desc" data-en="Conducted empirical analysis on the relationship between domestic violence (DV), COVID-19 lockdowns, mobility restrictions, and the slowdown of economic activity in Colorado." data-ja="コロラド州における家庭内暴力（DV）、COVID-19ロックダウン、移動制限、経済活動低下の関係について実証分析を実施。"></p>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-meta"><span class="entry-year">2019–present</span></div>
+        <div class="entry-body">
+          <p class="entry-title" data-en="Data Scientist &amp; Economist, Bank of Japan" data-ja="データサイエンティスト・エコノミスト、日本銀行"></p>
+          <p class="entry-desc" data-en="Roles in Financial Markets (OTC-derivatives analytics, payment-system stability simulations), Payment &amp; Settlement Systems, and Kagoshima Branch (regional economic research). Contributions to international central-bank meetings. Currently on study leave at University of Colorado Boulder." data-ja="金融市場局（OTCデリバティブ分析・決済システム安定性シミュレーション）、決済機構局、鹿児島支店（地域経済調査）を歴任。国際中央銀行会議にも貢献。現在、留学制度によりコロラド大学ボルダー校に在籍。"></p>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-meta"><span class="entry-year">2021–2024</span></div>
+        <div class="entry-body">
+          <p class="entry-title" data-en="Researcher, Bank of Japan" data-ja="研究員、日本銀行"></p>
+          <p class="entry-desc" data-en="Conducted empirical research on interest rate swap data to assess regulatory impacts and monetary policy transmission, in collaboration with external professors and economists." data-ja="金利スワップデータを用いた規制影響・金融政策波及の実証研究。外部の教員・エコノミストと共同研究。"></p>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-meta"><span class="entry-year">2017–2019</span></div>
+        <div class="entry-body">
+          <p class="entry-title" data-en="Graduate Researcher, University of Tokyo" data-ja="大学院研究員、東京大学"></p>
+          <p class="entry-desc" data-en="Developed agent-based simulations to evaluate interbank liquidity stress and regulatory effects." data-ja="インターバンク流動性ストレスおよび規制効果を評価するエージェントベースシミュレーションを開発。"></p>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-meta"><span class="entry-year">2017</span></div>
+        <div class="entry-body">
+          <p class="entry-title" data-en="Research Intern, Mitsubishi UFJ Trust Investment Technology Institute" data-ja="リサーチインターン、三菱UFJ信託銀行投資技術研究所"></p>
+          <p class="entry-desc" data-en="Financial data analysis and machine learning applications; final presentation on predicting short-term order patterns using machine learning." data-ja="金融データ分析と機械学習の応用。最終発表「機械学習を用いた短期注文パターンの予測」。"></p>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- Teaching -->
+    <section id="teaching">
+      <h2 data-en="Teaching &amp; Academic Service" data-ja="教育・学術活動"></h2>
+
+      <div class="entry">
+        <div class="entry-meta"><span class="entry-year">2025</span></div>
+        <div class="entry-body">
+          <p class="entry-title" data-en="Teaching Assistant — Data Structures and Algorithms, University of Colorado Boulder" data-ja="TA — データ構造とアルゴリズム、コロラド大学ボルダー校"></p>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-meta"><span class="entry-year">2018–2019</span></div>
+        <div class="entry-body">
+          <p class="entry-title" data-en="Teaching Assistant — Strategic Management of Technology, University of Tokyo" data-ja="TA — 俯瞰経営学、東京大学"></p>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-meta"><span class="entry-year">2018</span></div>
+        <div class="entry-body">
+          <p class="entry-title" data-en="Teaching Assistant (JICA Internship) — National University of Timor-Leste" data-ja="TA（JICA インターンシップ）— 東ティモール国立大学"></p>
+          <p class="entry-desc" data-en="Assisted in teaching mathematics, physics, and programming." data-ja="数学・物理・プログラミングの授業を補助。"></p>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-meta"><span class="entry-year">2017–2018</span></div>
+        <div class="entry-body">
+          <p class="entry-title" data-en="Volunteer Teaching Assistant — Japanese Language Instruction, University of Tokyo" data-ja="ボランティアTA — 留学生日本語指導、東京大学"></p>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- Skills -->
+    <section id="skills">
+      <h2 data-en="Technical Skills" data-ja="技術スキル"></h2>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h4 data-en="Programming" data-ja="プログラミング"></h4>
+          <p>Python, R, C++, Java, VBA, X10</p>
+        </div>
+        <div class="skill-group">
+          <h4 data-en="Tools &amp; Platforms" data-ja="ツール・プラットフォーム"></h4>
+          <p>Linux, Git, Jupyter, RStudio, VS Code, GCP, LaTeX, Generative AI APIs</p>
+        </div>
+        <div class="skill-group">
+          <h4 data-en="Languages" data-ja="言語"></h4>
+          <p data-en="Japanese (Native) · English (TOEFL iBT 102)" data-ja="日本語（母語）· 英語（TOEFL iBT 102）"></p>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- Awards -->
+    <section id="awards">
+      <h2 data-en="Awards" data-ja="受賞"></h2>
+      <div class="entry">
+        <div class="entry-meta"><span class="entry-year">2019</span></div>
+        <div class="entry-body">
+          <p class="entry-title" data-en="Department Chair's Award (Top Student in Department), University of Tokyo" data-ja="専攻長賞（専攻首席）、東京大学"></p>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <footer>
+      <p data-en="© 2025 Taihei Sone · Last updated March 2026" data-ja="© 2025 曽根 太平 · 最終更新：2026年3月"></p>
+    </footer>
+
+  </div><!-- .container -->
+
+  <script src="main.js"></script>
+</body>
+</html>

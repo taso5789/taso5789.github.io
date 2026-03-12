@@ -216,10 +216,7 @@ h4 {
 }
 
 /* ===== Language block visibility ===== */
-/* Do not hide the <html> element itself when it carries the lang-ja class. */
-.lang-ja:not(html) { display: none; }
-html.lang-ja .lang-ja { display: inline; }
-html.lang-ja .lang-en { display: none; }
+.lang-ja { display: none; }
 
 /* ===== Publications ===== */
 .pub-group { margin-bottom: 8px; }

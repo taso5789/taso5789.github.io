@@ -216,9 +216,8 @@ h4 {
 }
 
 /* ===== Language block visibility ===== */
-/* Default: show EN, hide JA */
-.lang-ja { display: none; }
-/* When <html> has class lang-ja (set before first paint): swap visibility */
+/* Do not hide the <html> element itself when it carries the lang-ja class. */
+.lang-ja:not(html) { display: none; }
 html.lang-ja .lang-ja { display: inline; }
 html.lang-ja .lang-en { display: none; }
 

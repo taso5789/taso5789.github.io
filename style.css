@@ -47,6 +47,7 @@ header { padding: 40px 0 24px; }
   color: var(--muted);
   margin-top: 6px;
   font-style: italic;
+  text-align: left;
 }
 
 .contact-row {
@@ -163,18 +164,21 @@ h4 {
   font-weight: 500;
   color: var(--text);
   line-height: 1.45;
+  text-align: left;
 }
 .entry-sub {
   font-size: 0.84rem;
   color: var(--muted);
   margin-top: 2px;
   line-height: 1.5;
+  text-align: justify;
 }
 .entry-desc {
   font-size: 0.87rem;
   color: var(--muted);
   margin-top: 4px;
   line-height: 1.6;
+  text-align: justify;
 }
 
 /* ===== Publications ===== */
@@ -189,6 +193,7 @@ h4 {
   font-size: 0.9rem;
   line-height: 1.65;
   color: var(--text);
+  text-align: justify;
 }
 .pub-citation em { font-style: italic; }
 
@@ -201,6 +206,7 @@ h4 {
   font-size: 0.82rem;
   color: var(--muted);
   padding: 1px 0;
+  text-align: left;
 }
 .pub-venues li::before {
   content: "— ";
@@ -217,6 +223,7 @@ h4 {
   font-size: 0.87rem;
   color: var(--muted);
   line-height: 1.55;
+  text-align: left;
 }
 
 /* ===== Footer ===== */

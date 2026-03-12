@@ -21,6 +21,7 @@ body {
   background: var(--bg);
   color: var(--text);
   line-height: 1.7;
+  text-align: justify;
 }
 
 /* ===== Container ===== */
@@ -56,6 +57,7 @@ header { padding: 40px 0 24px; }
   gap: 4px 0;
   align-items: center;
   color: var(--muted);
+  text-align: left;
 }
 .contact-row a {
   color: var(--accent-light);
@@ -82,6 +84,7 @@ h2 {
   color: var(--accent);
   margin-bottom: 16px;
   letter-spacing: -0.005em;
+  text-align: left;
 }
 
 h3 {
@@ -91,6 +94,7 @@ h3 {
   letter-spacing: 0.08em;
   color: var(--muted);
   margin: 18px 0 10px;
+  text-align: left;
 }
 h3:first-child { margin-top: 4px; }
 
@@ -101,6 +105,7 @@ h4 {
   letter-spacing: 0.07em;
   color: var(--muted);
   margin-bottom: 4px;
+  text-align: left;
 }
 
 /* ===== About ===== */
@@ -116,6 +121,7 @@ h4 {
   flex-wrap: wrap;
   gap: 8px;
   padding: 0;
+  text-align: left;
 }
 .tag-list li {
   background: var(--bg-tag);

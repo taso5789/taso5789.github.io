@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://taso5789.github.io/sitemap.xml

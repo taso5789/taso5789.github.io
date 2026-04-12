@@ -226,24 +226,6 @@ h4 {
   text-align: justify;
 }
 
-/* ===== LaTeX Logo ===== */
-.latex {
-  font-family: 'Computer Modern', 'Latin Modern', Georgia, serif;
-  letter-spacing: 0.02em;
-}
-.latex sup {
-  font-size: 0.75em;
-  vertical-align: 0.35em;
-  margin-left: -0.3em;
-  margin-right: -0.1em;
-}
-.latex sub {
-  font-size: 0.85em;
-  vertical-align: -0.2em;
-  margin-left: -0.15em;
-  margin-right: -0.05em;
-}
-
 /* ===== Footer ===== */
 footer {
   text-align: center;
